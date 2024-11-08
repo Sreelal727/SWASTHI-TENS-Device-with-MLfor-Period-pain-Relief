@@ -6,8 +6,6 @@ Google form : https://docs.google.com/forms/d/e/1FAIpQLSe8OiSM0lFfRg46Y8NLGstNKT
 
 Responses : https://docs.google.com/spreadsheets/d/1R7PQS3YQPm_RBV2VIW749AZy8LearTjYBM5kFcjOqLw/edit?usp=sharing
 
-**Project Overview**
-This project combines hardware and software components:
 
 **Hardware:**
 A TENS device controlled via an ESP8266 microcontroller connected to an EMG sensor for real-time data acquisition.
