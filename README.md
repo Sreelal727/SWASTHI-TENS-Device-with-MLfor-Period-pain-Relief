@@ -24,6 +24,8 @@ Machine learning algorithms trained on EMG data to detect muscle cramps and pred
 
 ![WhatsApp Image 2024-11-08 at 06 29 33_931b36ef](https://github.com/user-attachments/assets/c0ee4da4-3024-46af-9d0f-23d7c0d47d32)
 
+Flow Chart:
+![WhatsApp Image 2024-11-08 at 08 22 35_307c1739](https://github.com/user-attachments/assets/8a32c608-22a5-4149-a162-faa6e47444fd)
 
 
 **Files in this Repository**
