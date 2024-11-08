@@ -115,3 +115,15 @@ ESP8266: Handles data acquisition, control, and communication.
 TENS Device: Configured to respond to varying intensity levels based on detected pain levels.
 Acknowledgments
 This project was developed to provide a customizable, machine-learning-driven solution for period pain relief, empowering women with better management options for menstrual discomfort. Special thanks to the contributors and all who supported the development of SWASTHI.
+
+
+
+**Results:**
+User Interface
+![image](https://github.com/user-attachments/assets/f052c3f4-716b-41d2-ab43-7aa7f4e0dd82)
+
+
+Machine learning model 
+![result](https://github.com/user-attachments/assets/6470c9fd-4336-489c-9888-1c96fc902b39)
+
+
