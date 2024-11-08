@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SWASTHI Period Tracker Dashboard</title>
+  <style>
+    /* Resetting basic styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      display: flex;
+      justify-content: center;
+      background-color: #f5f5fa;
+    }
+
+    .container {
+      display: flex;
+      width: 100%;
+      max-width: 1200px;
+    }
+
+    .sidebar {
+      width: 80px;
+      background-color: #2f2e41;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px 0;
+    }
+
+    .sidebar .profile svg {
+      width: 50px;
+      height: 50px;
+      fill: white;
+      margin-bottom: 20px;
+    }
+
+    .sidebar nav a {
+      display: block;
+      color: white;
+      font-size: 24px;
+      margin: 10px 0;
+      text-decoration: none;
+    }
+
+    main {
+      flex-grow: 1;
+      padding: 20px;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+
+    header h1 {
+      font-size: 24px;
+      color: #333;
+    }
+
+    header input[type="text"] {
+      padding: 8px 12px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    .period-info {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 20px;
+    }
+
+    .period-days, .tens-status {
+      background-color: #ffffff;
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+      width: 48%;
+    }
+
+    .period-days .circle {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      background-color: #ff6b6b; /* Red color */
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 10px;
+    }
+
+    .period-days .day {
+      font-size: 24px;
+    }
+
+    .tens-status h3 {
+      margin-bottom: 10px;
+      color: #333;
+    }
+
+    .status-box {
+      margin-top: 10px;
+      padding: 10px;
+      background-color: #f5f5fa;
+      border-radius: 5px;
+    }
+
+    .daily-info {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 20px;
+    }
+
+    .check-in, .other-info {
+      background-color: #ffffff;
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+      width: 48%;
+    }
+
+    .check-in button {
+      padding: 10px 20px;
+      background-color: #ff6f91;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .other-info .info-box {
+      margin-top: 10px;
+      background-color: #f5f5fa;
+      padding: 10px;
+      border-radius: 5px;
+    }
+
+    .expert-insights {
+      margin-top: 20px;
+    }
+
+    .expert-insights h3 {
+      margin-bottom: 10px;
+      color: #333;
+    }
+
+    .insights {
+      display: flex;
+      gap: 10px;
+      overflow-x: auto;
+    }
+
+    .insight-card {
+      min-width: 150px;
+      padding: 15px;
+      background-color: #ffffff;
+      border-radius: 10px;
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+      flex-shrink: 0;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <div class="profile">
+        <!-- Placeholder icon for unknown profile picture -->
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+          <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 4c1.66 0 3 1.34 3 3s-1.34 3-3 3-3-1.34-3-3 1.34-3 3-3zm0 14c-2.5 0-4.71-1.28-6-3.22.03-1.99 4-3.08 6-3.08s5.97 1.09 6 3.08c-1.29 1.94-3.5 3.22-6 3.22z"/>
+        </svg>
+      </div>
+      <nav>
+        <a href="#" class="icon">🏠</a>
+        <a href="#" class="icon">📊</a>
+        <a href="#" class="icon">💡</a>
+      </nav>
+    </aside>
+
+    <!-- Main Content -->
+    <main>
+      <!-- Header -->
+      <header>
+        <h1>Good Morning, Aswathy!</h1>
+        <input type="text" placeholder="Search">
+      </header>
+
+      <!-- Period Info Section -->
+      <section class="period-info">
+        <div class="period-days">
+          <div class="circle">
+            <div class="day">2</div> <!-- Day number updated to 2 -->
+            <p> Days</p> <!-- Added space before Days -->
+          </div>
+          <p>Period day...</p> <!-- Changed "Period in" to "Period day" -->
+          <small>Lower chance to get pregnant!</small>
+        </div>
+
+        <!-- TENS Status Section -->
+        <div class="tens-status">
+          <h3>TENS Status</h3>
+          <div class="status-box" id="cramp-intensity">Cramp Intensity: --</div>
+          <div class="status-box" id="pain-level">Pain Level: --</div>
+          <div class="status-box" id="tens-mode">TENS Mode: --</div>
+        </div>
+      </section>
+
+      <!-- Daily Check-in and Info -->
+      <section class="daily-info">
+        <div class="check-in">
+          <h4>How are you feeling today?</h4>
+          <button>Share With Us</button>
+        </div>
+        <div class="other-info">
+          <div class="info-box">Weight: 45kg</div>
+          <div class="info-box">Water: 200ml</div>
+        </div>
+      </section>
+
+      <!-- Expert Insights Section -->
+      <section class="expert-insights">
+        <h3>Expert Insights</h3>
+        <div class="insights">
+          <div class="insight-card">A Visual Guide to Understanding Your Period</div>
+          <div class="insight-card">Tips for a Balanced Cycle</div>
+          <div class="insight-card">Healthy Food for Menstrual Health</div>
+          <!-- More cards as needed -->
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <!-- JavaScript to fetch from ThingSpeak and update values -->
+  <script>
+    async function fetchMeanFrequency() {
+      const apiKey = "3FL4Z3Z338O5XM47";
+      const channelId = " 2733660";
+      const url = `https://api.thingspeak.com/channels/${channelId}/fields/1/last.json?api_key=${apiKey}`;
+      
+      try {
+        const response = await fetch(url);
+        const data = await response.json();
+        const meanFrequency = parseFloat(data.field1);
+
+        let crampIntensity, painLevel, tensMode;
+
+        if (meanFrequency >= 100 && meanFrequency <= 135) {
+                    crampIntensity = "Low";
+          painLevel = Math.floor(Math.random() * 4) + 1; // Random value between 1-4
+          tensMode = "Weak";
+        } else if (meanFrequency >= 136 && meanFrequency <= 155) {
+          crampIntensity = "Medium";
+          painLevel = Math.floor(Math.random() * 3) + 5; // Random value between 5-7
+          tensMode = "Moderate";
+        } else if (meanFrequency > 155) {
+          crampIntensity = "High";
+          painLevel = Math.floor(Math.random() * 3) + 8; // Random value between 8-10
+          tensMode = "Strong";
+        } else {
+          crampIntensity = "--";
+          painLevel = "--";
+          tensMode = "--";
+        }
+
+        // Update the DOM with the values
+        document.getElementById("cramp-intensity").innerText = `Cramp Intensity: ${crampIntensity}`;
+        document.getElementById("pain-level").innerText = `Pain Level: ${painLevel}`;
+        document.getElementById("tens-mode").innerText = `TENS Mode: ${tensMode}`;
+      } catch (error) {
+        console.error("Error fetching data from ThingSpeak:", error);
+      }
+    }
+
+    // Fetch data and update the UI every 10 seconds
+    setInterval(fetchMeanFrequency, 10000);
+    // Initial fetch on page load
+    fetchMeanFrequency();
+  </script>
+</body>
+</html>
+
