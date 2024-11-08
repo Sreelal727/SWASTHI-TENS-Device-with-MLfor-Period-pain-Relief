@@ -1,7 +1,9 @@
 **SWASTHI** is a wearable TENS (Transcutaneous Electrical Nerve Stimulation) device integrated with Machine Learning to provide personalized period pain relief for women. The project uses EMG sensor data to predict cramping episodes and pain levels, delivering customized TENS therapy accordingly.
 
 **Background Research and Survey**:
+
 Google form : https://docs.google.com/forms/d/e/1FAIpQLSe8OiSM0lFfRg46Y8NLGstNKTqxEuhQJLiHiHcdDb_ZsRtxoA/viewform?usp=sf_link
+
 Responses : https://docs.google.com/spreadsheets/d/1R7PQS3YQPm_RBV2VIW749AZy8LearTjYBM5kFcjOqLw/edit?usp=sharing
 
 **Project Overview**
