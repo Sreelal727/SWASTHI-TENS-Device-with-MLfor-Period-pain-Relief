@@ -20,13 +20,10 @@ Machine learning algorithms trained on EMG data to detect muscle cramps and pred
 3. Slim, aesthetically pleasing, and ergonomic casing designed for daily wear.
 
 
-**Table of Contents**
-1. Files in this Repository
-2. Getting Started
-3. How to Run the Project
-4. Machine Learning Details
-5. Hardware Setup
-6. Acknowledgment
+**Block Diagram**
+
+![WhatsApp Image 2024-11-08 at 06 29 33_931b36ef](https://github.com/user-attachments/assets/c0ee4da4-3024-46af-9d0f-23d7c0d47d32)
+
 
 
 **Files in this Repository**
