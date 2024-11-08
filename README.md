@@ -126,4 +126,9 @@ User Interface
 Machine learning model 
 ![result](https://github.com/user-attachments/assets/6470c9fd-4336-489c-9888-1c96fc902b39)
 
+Working Video: 
+https://youtu.be/L1qJTxKjSGE
+
+Presentation:
+https://docs.google.com/presentation/d/1lsFhmmt5Vo_rLNfBoMJ8X6fjp1KpN6Zj/edit?usp=sharing&ouid=102105982643312255830&rtpof=true&sd=true
 
