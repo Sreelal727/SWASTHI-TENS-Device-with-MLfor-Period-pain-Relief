@@ -121,7 +121,8 @@ This project was developed to provide a customizable, machine-learning-driven so
 
 **Results:**
 User Interface
-![image](https://github.com/user-attachments/assets/f052c3f4-716b-41d2-ab43-7aa7f4e0dd82)
+<img width="1340" alt="image" src="https://github.com/user-attachments/assets/124e48a1-5e9d-4934-b148-6540c1550e36" />
+
 
 
 Machine learning model 
